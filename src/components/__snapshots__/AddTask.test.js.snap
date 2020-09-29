@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Task Component testing matches snapshot 1`] = `
+<div>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    + Add Task
+  </button>
+</div>
+`;

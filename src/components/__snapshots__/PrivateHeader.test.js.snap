@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Private Header testing matches snapshot 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="header__content"
+  >
+    <h1
+      className="header__title"
+    >
+      Task time tracking app
+    </h1>
+    <h2
+      style={
+        Object {
+          "padding": "1rem",
+        }
+      }
+    >
+      Created by Pooja Chawla
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`matches snapshot 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="header__content"
+  >
+    <h1
+      className="header__title"
+    >
+      Task time tracking app
+    </h1>
+    <h2
+      style={
+        Object {
+          "padding": "1rem",
+        }
+      }
+    >
+      Created by Pooja Chawla
+    </h2>
+  </div>
+</div>
+`;

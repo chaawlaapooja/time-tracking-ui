@@ -51,7 +51,7 @@ const CustomModal = (props) => {
         }
     }
     return(
-        <div>
+        <div id='custommodal'>
             <Modal visible={true} width="500" effect="fadeInUp" onClickAway={props.close_modal} >
                 <div className="modal-content">
                     <div className="modal-header" style={{color: "white"}}>
@@ -61,13 +61,16 @@ const CustomModal = (props) => {
                       <h2>{props.purpose.toUpperCase()} TASK</h2>
                         {error ? <p style={{color:"red"}}>{error}</p> : undefined}
                         <form onSubmit={handleSubmit}>
+                            <label>{props.purpose.toUpperCase()} TASK
                             <input
+                                
                                 type="text"
                                 placeholder="Name"
                                 onChange={handleNameChange}
                                 value={name} style={{width:95+"%"}}
                                 name="name"
                             />
+                            </label>
                             <br/>
                             {selectedTags.map(tag=><button className="button button--pill" key={tag} style={{backgroundColor:'#D8BFD8'}} onClick={()=>handleTagClick(tag, 'selected')}>{tag}</button>)}
                             <br/>
@@ -75,7 +78,7 @@ const CustomModal = (props) => {
                             <br/>
                             {tags.map(tag=><button className="button button--pill" key={tag} onClick={()=>handleTagClick(tag, 'unselected')}>{tag}</button>)}
                             <br/><br/>
-                            <button className="button">{props.purpose} Task</button>
+                            <button className="button" data-testid='submit'>{props.purpose} Task</button>
                         </form>
                     </div>
                     <div className="modal-footer" >
